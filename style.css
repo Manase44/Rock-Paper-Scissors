@@ -4,6 +4,7 @@
   --main-color:#9ec91e;
   --secondary-color:#f2c244;
   --blue-color:#0000ee;
+  --white-color:#efefef;
   --font:"Press Start 2P", system-ui;
 }
 
@@ -11,4 +12,86 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container{
+  background-color: var(--main-color);
+  width: 50%;
+}
+header{
+  padding: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright > p, .scores > p{
+  font-size: 13px;
+}
+.computer-playground{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.7rem;
+  gap: 0.6rem;
+}
+.playground-heading{
+  text-transform: capitalize;
+}
+.playground-image{
+  border: 2px dashed black;
+  display: grid;
+  place-content: center;
+}
+.playground-image > span {
+  font-size: 6.3rem;
+}
+.score-message{
+  width: 100%;
+  height: 3.6rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.3rem 0;
+}
+.message{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.player-playground{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.player-pad{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.3rem;
+  gap: 1rem;
+}
+.player-pad-choices{
+  background-color: var(--white-color);
+  border-radius: 10px;
+  padding:0.6rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.player-pad-choices-symbol{
+  font-size: 3.2rem;
+}
+.player-pad-choices-name{
+  font-size: 13px;
 }

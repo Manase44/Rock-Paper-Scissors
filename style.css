@@ -80,6 +80,7 @@ header{
   gap: 1rem;
 }
 .player-pad-choices{
+  cursor: pointer;
   background-color: var(--white-color);
   border-radius: 10px;
   padding:0.6rem 1.3rem;
@@ -87,11 +88,67 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 .player-pad-choices-symbol{
   font-size: 3.2rem;
+
 }
 .player-pad-choices-name{
   font-size: 13px;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+  .main-container{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  header{
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .scores > p{
+    font-size: 10px;
+  }
+  .copyright > p{
+    font-size: 11px;
+  }
+  .playground-heading{
+    font-size: 13px;
+  }
+  .computer-playground{
+    margin-top: 3.5rem;
+  }
+  .playground-image > span {
+    font-size: 5rem;
+  }
+  .player-pad-choices-symbol{
+    font-size: 2.5rem;
+  
+  }
+}
+@media screen and (max-width: 350px) {
+  .player-pad{
+    flex-direction: column;
+    width: 80%;
+  }
+  body{
+    height: max-content;
+  }
+  .main-container{
+    display: grid;
+    place-items: center;
+  }
+  .score-message{
+    height: 2.6rem;
+  }
+  .message{
+    font-size: 15px;
+  }
 }

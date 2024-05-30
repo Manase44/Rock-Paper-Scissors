@@ -111,6 +111,3 @@ scissorPad.addEventListener("click", () => {
   playingEngine(playerChoice);
   playerEmojiUpdate(playerChoice);
 });
-
-// console.log(playingEngine(computerChoice, playerChoice));
-// console.log(`comp: ${computerChoice} player: ${playerChoice}`);
